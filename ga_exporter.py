@@ -35,8 +35,8 @@ class GarCollector(object):
 
 
 if __name__ == '__main__':
-    KEY_FILE_LOCATION = './oval-bricolage-259713-b209c7ee41bf.json'
-    VIEW_ID = str(os.getenv('VIEW_ID'))
+    KEY_FILE_LOCATION = os.getenv('KEY_FILE_LOCATION')
+    VIEW_ID = os.getenv('VIEW_ID')
 
     start_http_server(9177)
     REGISTRY.register(GarCollector())
