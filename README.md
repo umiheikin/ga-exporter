@@ -19,4 +19,4 @@ STEPS TO RUN:
 2) Run docker build -t <docker_tag/here:v1.0> .
 
 3) Run docker container from the image which just created
-   docker run -d --restart=always -p 9177:9177 -e VIEW_ID="215444465" -e ACCOUNT_EMAIL="your_account_name" <docker_tag/here:v1.0>
+   docker run -d --restart=always -p 9177:9177 -e VIEW_ID="<your_vieId>" -e ACCOUNT_EMAIL="your_account_name" <docker_tag/here:v1.0>
